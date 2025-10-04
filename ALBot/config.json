@@ -1,0 +1,12 @@
+{
+    "tag_conf": 0.8,
+    "normal_conf": 0.6,
+    "default_confidence_detection": 0.8,
+    "default_confidence_verification": 0.6,
+    "sleep_after_click": 6,
+    "random_move_chance": 0.1,
+    "right_click_chance": 0.1,
+    "time_to_collect": 5,
+    "DEBUG": false,
+    "menu_color": "b"
+}
