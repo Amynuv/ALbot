@@ -14,7 +14,7 @@ Ce projet est sous licence **MIT License - Attribution obligatoire.**
 
 MIT License - Attribution obligatoire
 
-```Copyright (c) 2025 Amynuv
+```Copyright (c) 2025 Amynuv, mercurylemc_, ricozadsky.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to use,
