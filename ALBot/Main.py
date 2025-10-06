@@ -14,8 +14,8 @@ o88o     o8888o o888ooooood8 o888bood8P'   `Y8bood8P'      o888o
 # Dépendances : { "module": "package pip" }
 DEPENDANCES = {
     "pyautogui": "pyautogui",
-    "PIL": "pillow"
-    #"":""
+    "PIL": "pillow",
+    "cv2": "opencv-python"
 }
 
 
@@ -125,6 +125,7 @@ os.system("cls" if os.name == "nt" else "clear")
 while True:
     enter_choice()
 #bot_menu()
+
 
 
 
