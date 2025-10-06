@@ -14,14 +14,14 @@ def installer(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 def menu_dependances(DEPENDANCES):
-    print("\n=== Vérification des dépendances ===")
+    print("\n=== Verification des dépendances ===")
     manquants = [mod for mod, pkg in DEPENDANCES.items() if not est_installe(mod)]
 
     if not manquants:
         print("Toutes les dépendances sont déjà installées.")
         return
 
-    print("Dépendances manquantes :", ", ".join(manquants))
+    print("Dependances manquantes :", ", ".join(manquants))
     choix = input("Voulez-vous les installer ? (o/n) : ").lower()
 
     if choix == "o":
@@ -30,8 +30,9 @@ def menu_dependances(DEPENDANCES):
                 installer(DEPENDANCES[mod])
             except Exception as e:
                 print(f"Erreur lors de l’installation de {mod} :", e)
-        print("Installation terminée.")
+        print("Installation terminee.")
     else:
         print("Installation annulée.")
 
         return
+
