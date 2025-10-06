@@ -14,7 +14,7 @@ def farm_menu(config, config_path, logo):
     while True:
         os.system("cls" if os.name == "nt" else "clear")
         print(logo)
-        print("=== CONFIGURATION DE FARM ===\n")
+        print("=== CONFIGURATION DE FARM ===")
 
         # Afficher les états actuels (Oui / Non)
         for i, (minerai, actif) in enumerate(config.items(), start=1):
@@ -64,4 +64,5 @@ def farm_menu(config, config_path, logo):
                 time.sleep(1)
         else:
             print("Choix invalide.")
+
             time.sleep(1)
