@@ -11,11 +11,22 @@ logo = f"""
 o88o     o8888o o888ooooood8 o888bood8P'   `Y8bood8P'      o888o     
                                                                  
 """
+# Dépendances : { "module": "package pip" }
+DEPENDANCES = {
+    "pyautogui": "pyautogui",
+    "PIL": "pillow"
+    #"":""
+}
+
+
+
+
 import os
 import importlib.util
 import subprocess
 import sys
 from src.menus.dependances import menu_dependances
+menu_dependances(DEPENDANCES)
 from src.menus.menu_settings import config_menu
 from src.menus.menu_credits_dependances import credits_dep__menu, show_settings
 from src.menus.menu_farm import farm_menu
@@ -36,12 +47,8 @@ with open(detection_config_path, "r+", encoding="utf-8") as f:
 
 
 
-# Dépendances : { "module": "package pip" }
-DEPENDANCES = {
-    "pyautogui": "pyautogui",
-    "PIL": "pillow"
-    #"":""
-}
+
+
 
 
 
@@ -113,10 +120,11 @@ def enter_choice():
 
 
 
-menu_dependances(DEPENDANCES)
+
 os.system("cls" if os.name == "nt" else "clear")
 while True:
     enter_choice()
 #bot_menu()
+
 
 
