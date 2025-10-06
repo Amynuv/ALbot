@@ -1,5 +1,5 @@
 import subprocess
-
+import sys
 def est_installe(module):
     """Teste l'import du module directement"""
     try:
@@ -33,4 +33,5 @@ def menu_dependances(DEPENDANCES):
         print("Installation terminée.")
     else:
         print("Installation annulée.")
+
         return
